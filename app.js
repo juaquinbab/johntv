@@ -10,7 +10,7 @@ const multer = require('multer'); // Para manejar la carga de archivos
 
 const app = express();
 
-app.use(express.static(__dirname + '/Public'));
+app.use(express.static(__dirname + '/public'));
 
 const port = process.env.PORT;
 
