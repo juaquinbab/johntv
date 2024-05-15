@@ -121,11 +121,11 @@ client.on('message', async (message) => {
       if (!(message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta Virtual")) && message.body !== '2') {
         client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
       } else if (message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta virtual")) {
-        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direccionar a nuestra *línea de 📞 Ventas*, donde uno de nuestros expertos 👨🏻‍💼 te ayudará con tu requerimiento. Haz clic aquí para recibir asistencia inmediata \n\n🔜 https://wa.link/noyxfm');
+        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direccionar a nuestra *línea de 📞 Ventas*, donde uno de nuestros expertos 👨🏻‍💼 te ayudará con tu requerimiento. Haz clic aquí para recibir asistencia inmediata *NUEVA LINEA* :📲 300-329-00-88 \n\n🔜 https://wa.link/noyxfm \n\n');
         registro[message.from].etapa = 40;
         delete registro[message.from];
       } else if (message.body === '2') {
-        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direcciónar a nuestra *línea de 🛠️ Soporte Técnico* donde unos de 👨🏻‍🔧👨🏻‍🔧 nuestros colaboradores te ayudara con tu requerimiento dale click aquí \n\n🔜 https://wa.link/xpnyof');
+        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direcciónar a nuestra *línea de 🛠️ Soporte Técnico* donde unos de 👨🏻‍🔧👨🏻‍🔧 nuestros colaboradores te ayudara con tu requerimiento dale click aquí *NUEVA LINEA SOPORTE* :📲 321-575-9412 \n\n🔜 https://wa.link/xpnyof');
         registro[message.from].etapa = 40;
         delete registro[message.from];
       }
