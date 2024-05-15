@@ -89,10 +89,6 @@ client.on('message', async (message) => {
 
     registro[message.from] = { etapa: 0, numeroDocumento: '' };
 
-    const fileName = `${message.from}.json`;
-    if (!fs.existsSync(fileName)) {
-      fs.writeFileSync(fileName, JSON.stringify({}));
-    }
 
     return;
   }
