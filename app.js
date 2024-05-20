@@ -83,9 +83,9 @@ client.on('message', async (message) => {
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
   if (!registro[message.from]) {
-    client.sendMessage(message.from, 'Gracias por comunicarte con *JOHNPAISATV* 📺 Somos el *#1* en Colombia 🇨🇴 ¿Cómo podemos ayudarte? 💬\n\nEscribe el número de la opción que deseas consultar:\n\n1️⃣ *Ventas* \n\n2️⃣ *Soporte*');
+    //client.sendMessage(message.from, 'Gracias por comunicarte con *JOHNPAISATV* 📺 Somos el *#1* en Colombia 🇨🇴 ¿Cómo podemos ayudarte? 💬\n\nEscribe el número de la opción que deseas consultar:\n\n1️⃣ *Ventas* \n\n2️⃣ *Soporte*');
     //client.sendMessage(message.from, mediaFilepdf)
-    client.sendMessage(message.from, mediaFilemp3)
+    //client.sendMessage(message.from, mediaFilemp3)
 
     registro[message.from] = { etapa: 0, numeroDocumento: '' };
 
@@ -119,13 +119,13 @@ client.on('message', async (message) => {
 
     case 0:
       if (!(message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta Virtual")) && message.body !== '2') {
-        client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
+        //client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
       } else if (message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta virtual")) {
-        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direccionar a nuestra *línea de 📞 Ventas*, donde uno de nuestros expertos 👨🏻‍💼 te ayudará con tu requerimiento. Haz clic aquí para recibir asistencia inmediata *NUEVA LINEA* :📲 300-329-00-88 \n\n🔜 https://wa.link/noyxfm \n\n');
+        //client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direccionar a nuestra *línea de 📞 Ventas*, donde uno de nuestros expertos 👨🏻‍💼 te ayudará con tu requerimiento. Haz clic aquí para recibir asistencia inmediata *NUEVA LINEA* :📲 300-329-00-88 \n\n🔜 https://wa.link/noyxfm \n\n');
         registro[message.from].etapa = 40;
         delete registro[message.from];
       } else if (message.body === '2') {
-        client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direcciónar a nuestra *línea de 🛠️ Soporte Técnico* donde unos de 👨🏻‍🔧👨🏻‍🔧 nuestros colaboradores te ayudara con tu requerimiento dale click aquí *NUEVA LINEA SOPORTE* :📲 321-575-9412 \n\n🔜 https://wa.link/xpnyof');
+        //client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direcciónar a nuestra *línea de 🛠️ Soporte Técnico* donde unos de 👨🏻‍🔧👨🏻‍🔧 nuestros colaboradores te ayudara con tu requerimiento dale click aquí *NUEVA LINEA SOPORTE* :📲 321-575-9412 \n\n🔜 https://wa.link/xpnyof');
         registro[message.from].etapa = 40;
         delete registro[message.from];
       }
