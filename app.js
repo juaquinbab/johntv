@@ -34,7 +34,7 @@ const client = new Client({
   authStrategy: new LocalAuth({ clientId: "Client-one" }),
   webVersionCache: {
     type: 'remote',
-    remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html',
+    remotePath: 'https://raw.githubusercontent.com/guigo613/alternative-wa-version/main/html/2.2412.54v2.html'
   }
 });
 
@@ -61,8 +61,8 @@ client.on('authenticated', (session) => {
 
 
 
-const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.mp3'}`)
-// const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'image.mp4'}`)
+// const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm4'}`)
+const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'video.mp4'}`)
 //const mediaFilepdf = MessageMedia.fromFilePath(`./public/media/${'CATÁLOGO_ABRIL .pdf'}`)
 
 
@@ -83,9 +83,10 @@ client.on('message', async (message) => {
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
   if (!registro[message.from]) {
-    //client.sendMessage(message.from, 'Gracias por comunicarte con *JOHNPAISATV* 📺 Somos el *#1* en Colombia 🇨🇴 ¿Cómo podemos ayudarte? 💬\n\nEscribe el número de la opción que deseas consultar:\n\n1️⃣ *Ventas* \n\n2️⃣ *Soporte*');
+    client.sendMessage(message.from, '*¡Hola😃!*\n\nSoy Vivi Rangel 👩🏽de las reinas de los sorteos, te tengo una noticia que te dejará así 😱.\n\n *¿Quieres saber de qué trata?* 👉🏽Escribe  1️⃣');
+    client.sendMessage(message.from, mediaFilemp4)
     //client.sendMessage(message.from, mediaFilepdf)
-    //client.sendMessage(message.from, mediaFilemp3)
+    // client.sendMessage(message.from, mediaFilemp3)
 
     registro[message.from] = { etapa: 0, numeroDocumento: '' };
 
@@ -118,12 +119,14 @@ client.on('message', async (message) => {
 
 
     case 0:
-      if (!(message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta Virtual")) && message.body !== '2') {
+      if (!(message.body.includes("1") || message.body.includes("Escriba 1") || message.body.includes("1 Consulta Virtual")) && message.body !== '2') {
+        //client.sendMessage(message.from, mediaFilemp3)
         //client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
-      } else if (message.body.includes("1") || message.body.includes("Consulta") || message.body.includes("1 Consulta virtual")) {
-        //client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direccionar a nuestra *línea de 📞 Ventas*, donde uno de nuestros expertos 👨🏻‍💼 te ayudará con tu requerimiento. Haz clic aquí para recibir asistencia inmediata *NUEVA LINEA* :📲 300-329-00-88 \n\n🔜 https://wa.link/noyxfm \n\n');
-        registro[message.from].etapa = 40;
-        delete registro[message.from];
+      } else if (message.body.includes("1") || message.body.includes("escriba 1") || message.body.includes("1 Consulta virtual")) {
+        client.sendMessage(message.from, mediaFilemp4)
+        client.sendMessage(message.from, '*Hola* por favor ver el video\n\n');
+        //registro[message.from].etapa = 40;
+        //delete registro[message.from];
       } else if (message.body === '2') {
         //client.sendMessage(message.from, '*Hola*, ¿cómo estás? 😊 Para brindarte una atención más personalizada, te vamos a direcciónar a nuestra *línea de 🛠️ Soporte Técnico* donde unos de 👨🏻‍🔧👨🏻‍🔧 nuestros colaboradores te ayudara con tu requerimiento dale click aquí *NUEVA LINEA SOPORTE* :📲 321-575-9412 \n\n🔜 https://wa.link/xpnyof');
         registro[message.from].etapa = 40;
