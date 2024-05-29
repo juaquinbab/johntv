@@ -27,7 +27,7 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 
 const client = new Client({
   puppeteer: {
-    // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+   //executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     args: ['--no-sandbox'],
 
   },
@@ -62,7 +62,7 @@ client.on('authenticated', (session) => {
 
 
 // const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm4'}`)
-const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'video.mp4'}`)
+ const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'audio.mp3'}`)
 //const mediaFilepdf = MessageMedia.fromFilePath(`./public/media/${'CATÁLOGO_ABRIL .pdf'}`)
 
 
@@ -83,7 +83,7 @@ client.on('message', async (message) => {
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
   if (!registro[message.from]) {
-    client.sendMessage(message.from, '🤖 ¡Hola! Soy el asistente virtual de la *Clínica Medsalud.* Solo estoy programado para proporcionar información. 📋 Recuerda que por este medio no se asignan citas.\n\nGracias por confiar en nosotros. En Medsalud trabajamos día a día para brindarte el mejor servicio. 💙👩‍⚕️👨‍⚕️');
+    client.sendMessage(message.from, '*¡Hola😃!*\n\nSoy Vivi Rangel 👩🏽de las reinas de los sorteos, te tengo una noticia que te dejará así 😱.\n\n *¿Quieres saber de qué trata?* 👉🏽Escribe  1️⃣');
     //client.sendMessage(message.from, mediaFilemp4)
     //client.sendMessage(message.from, mediaFilepdf)
     // client.sendMessage(message.from, mediaFilemp3)
@@ -123,8 +123,8 @@ client.on('message', async (message) => {
         //client.sendMessage(message.from, mediaFilemp3)
         //client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
       } else if (message.body.includes("1") || message.body.includes("escriba 1") || message.body.includes("1 Consulta virtual")) {
-        //client.sendMessage(message.from, mediaFilemp4)
-        //client.sendMessage(message.from, '*Hola* por favor ver el video\n\n');
+        client.sendMessage(message.from, mediaFilemp4)
+        client.sendMessage(message.from, '*Hola* por favor escucha el audio');
         //registro[message.from].etapa = 40;
         //delete registro[message.from];
       } else if (message.body === '2') {
@@ -171,7 +171,7 @@ client.on('message', async (message) => {
 
       case 20:
         if (!(message.body.toLowerCase() === "si" || message.body.toLowerCase() === "no")) {
-          //client.sendMessage(message.from, 'Por favor escribe si o no para continuar.');
+          client.sendMessage(message.from, 'Por favor escribe si o no para continuar.');
         } else if (message.body.toLowerCase() === "si" ) {
           const fileName = `${message.from}.json`;
         if (fs.existsSync(fileName)) {
