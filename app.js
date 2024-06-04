@@ -27,16 +27,27 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 
 const client = new Client({
   puppeteer: {
-   //executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-    args: ['--no-sandbox'],
-
+    // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    handleSIGINT: false,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   },
   authStrategy: new LocalAuth({ clientId: "Client-one" }),
   webVersionCache: {
     type: 'remote',
-    remotePath: 'https://raw.githubusercontent.com/guigo613/alternative-wa-version/main/html/2.2413.51-beta-alt.html'
+    remotePath: 'https://raw.githubusercontent.com/guigo613/alternative-wa-version/main/html/2.2413.51-beta-alt.html' // Tried 2.2412.54 still same result
   }
 });
+
+
+
+process.on("SIGINT", async () => {
+  console.log("(SIGINT) Shutting down...");
+  await client.destroy();
+  process.exit(0);
+})
+
+
+
 
 
 client.on('qr', (qr) => {
@@ -83,8 +94,9 @@ client.on('message', async (message) => {
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
   if (!registro[message.from]) {
-    client.sendMessage(message.from, '*¡Hola😃!*\n\nSoy Vivi Rangel 👩🏽de las reinas de los sorteos, te tengo una noticia que te dejará así 😱.\n\n *¿Quieres saber de qué trata?* 👉🏽Escribe  1️⃣');
+    client.sendMessage(message.from, '*¡Hola, soy JOHN STORE!* 🙌 \n\n Gracias por ser parte de nuestra familia. 🌟 🛒 Teníamos la línea de WhatsApp 📱 3024572102, pero lamentablemente tuvimos un problema con ella. ¡Pero no te preocupes! ¡Estamos aquí con una NUEVA LÍNEA! 🆕 Ahora nos puedes escribir al 3132502527 para cualquier pedido pendiente ó soporte que necesites.\n\n👉 No olvides guardar las líneas de respaldo de nuestros diferentes asesores. \n\n📲 300-329-00-88\n\n📲 302-457-21-02\n\n📲 313-250-25-27\n\n*Agradecemos tu confianza.');
     //client.sendMessage(message.from, mediaFilemp4)
+    client.sendMessage(message.from, mediaFilemp4)
     //client.sendMessage(message.from, mediaFilepdf)
     // client.sendMessage(message.from, mediaFilemp3)
 

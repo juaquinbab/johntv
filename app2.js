@@ -62,7 +62,7 @@ client.on('authenticated', (session) => {
 
 
 // const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm4'}`)
-const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'video.mp4'}`)
+// const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'video.mp4'}`)
 //const mediaFilepdf = MessageMedia.fromFilePath(`./public/media/${'CATÁLOGO_ABRIL .pdf'}`)
 
 

@@ -1,24 +1,3 @@
-2024/05/29-17:51:48.352 b303 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/05/29-17:51:48.352 b303 Recovering log #186
-2024/05/29-17:51:48.425 b303 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000186.log 
-2024/05/29-17:51:49.956 b303 Level-0 table #195: started
-2024/05/29-17:51:49.970 b303 Level-0 table #195: 746712 bytes OK
-2024/05/29-17:51:49.988 b303 Delete type=0 #186
-2024/05/29-17:51:49.989 b303 Manual compaction at level-0 from '\x00;\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at '\x00;\x00\x00\x05' @ 686133 : 1
-2024/05/29-17:51:49.989 b303 Compacting 1@0 + 1@1 files
-2024/05/29-17:51:50.028 b303 Generated table #196@0: 27055 keys, 479035 bytes
-2024/05/29-17:51:50.028 b303 Compacted 1@0 + 1@1 files => 479035 bytes
-2024/05/29-17:51:50.034 b303 compacted to: files[ 0 1 3 0 0 0 0 ]
-2024/05/29-17:51:50.035 b303 Delete type=2 #195
-2024/05/29-17:51:50.035 b303 Manual compaction at level-0 from '\x00;\x00\x00\x05' @ 686133 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at (end)
-2024/05/29-17:51:51.299 aa0b Compacting 1@1 + 3@2 files
-2024/05/29-17:51:51.332 aa0b Generated table #197@1: 31426 keys, 2192223 bytes
-2024/05/29-17:51:51.365 aa0b Generated table #198@1: 36894 keys, 2206220 bytes
-2024/05/29-17:51:51.401 aa0b Generated table #199@1: 62871 keys, 1418389 bytes
-2024/05/29-17:51:51.401 aa0b Compacted 1@1 + 3@2 files => 5816832 bytes
-2024/05/29-17:51:51.406 aa0b compacted to: files[ 0 0 3 0 0 0 0 ]
-2024/05/29-17:51:51.407 aa0b Delete type=2 #189
-2024/05/29-17:51:51.407 aa0b Delete type=2 #196
-2024/05/29-17:51:51.407 aa0b Delete type=2 #191
-2024/05/29-17:51:51.407 aa0b Delete type=2 #190
-2024/05/29-17:51:51.407 aa0b Delete type=2 #192
+2024/06/04-10:38:02.620 8e03 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/06/04-10:38:02.620 8e03 Recovering log #76
+2024/06/04-10:38:02.622 8e03 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000076.log 

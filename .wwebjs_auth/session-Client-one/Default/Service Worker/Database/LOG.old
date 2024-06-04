@@ -1,3 +1,2 @@
-2024/05/29-17:48:24.681 f603 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/MANIFEST-000001
-2024/05/29-17:48:24.682 f603 Recovering log #3
-2024/05/29-17:48:24.683 f603 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/000003.log 
+2024/06/04-10:29:22.097 b003 Creating DB /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database since it was missing.
+2024/06/04-10:29:22.121 b003 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/MANIFEST-000001
