@@ -73,7 +73,7 @@ client.on('authenticated', (session) => {
 
 
 // const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm4'}`)
- const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'audio.mp3'}`)
+ // const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'audio.mp3'}`)
 //const mediaFilepdf = MessageMedia.fromFilePath(`./public/media/${'CATÁLOGO_ABRIL .pdf'}`)
 
 
@@ -94,13 +94,13 @@ client.on('message', async (message) => {
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
   if (!registro[message.from]) {
-    client.sendMessage(message.from, '*¡Hola, soy JOHN STORE!* 🙌 \n\n Gracias por ser parte de nuestra familia. 🌟 🛒 Teníamos la línea de WhatsApp 📱 3024572102, pero lamentablemente tuvimos un problema con ella. ¡Pero no te preocupes! ¡Estamos aquí con una NUEVA LÍNEA! 🆕 Ahora nos puedes escribir al 3132502527 para cualquier pedido pendiente ó soporte que necesites.\n\n👉 No olvides guardar las líneas de respaldo de nuestros diferentes asesores. \n\n📲 300-329-00-88\n\n📲 302-457-21-02\n\n📲 313-250-25-27\n\n*Agradecemos tu confianza.');
+    //client.sendMessage(message.from, '*¡Hola, soy JOHN STORE!* 🙌 \n\n Gracias por ser parte de nuestra familia. 🌟 🛒 Teníamos la línea de WhatsApp 📱 3024572102, pero lamentablemente tuvimos un problema con ella. ¡Pero no te preocupes! ¡Estamos aquí con una NUEVA LÍNEA! 🆕 Ahora nos puedes escribir al 3132502527 para cualquier pedido pendiente ó soporte que necesites.\n\n👉 No olvides guardar las líneas de respaldo de nuestros diferentes asesores. \n\n📲 300-329-00-88\n\n📲 302-457-21-02\n\n📲 313-250-25-27\n\n*Agradecemos tu confianza.');
     //client.sendMessage(message.from, mediaFilemp4)
-    client.sendMessage(message.from, mediaFilemp4)
+    //client.sendMessage(message.from, mediaFilemp4)
     //client.sendMessage(message.from, mediaFilepdf)
     // client.sendMessage(message.from, mediaFilemp3)
 
-    registro[message.from] = { etapa: 0, numeroDocumento: '' };
+    //registro[message.from] = { etapa: 0, numeroDocumento: '' };
 
 
     return;

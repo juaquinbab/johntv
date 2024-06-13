@@ -1,3 +1,16 @@
-2024/06/04-10:38:02.620 8e03 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/06/04-10:38:02.620 8e03 Recovering log #76
-2024/06/04-10:38:02.622 8e03 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000076.log 
+2024/06/13-16:03:18.541 12207 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/06/13-16:03:18.541 12207 Recovering log #76
+2024/06/13-16:03:18.563 12207 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000076.log 
+2024/06/13-16:03:27.927 1ec07 Level-0 table #83: started
+2024/06/13-16:03:27.996 1ec07 Level-0 table #83: 998794 bytes OK
+2024/06/13-16:03:28.005 1ec07 Delete type=0 #76
+2024/06/13-16:03:28.727 1f907 Compacting 1@1 + 3@2 files
+2024/06/13-16:03:28.802 1f907 Generated table #84@1: 38744 keys, 2206560 bytes
+2024/06/13-16:03:28.870 1f907 Generated table #85@1: 39527 keys, 2190725 bytes
+2024/06/13-16:03:28.908 1f907 Generated table #86@1: 64042 keys, 1605641 bytes
+2024/06/13-16:03:28.908 1f907 Compacted 1@1 + 3@2 files => 6002926 bytes
+2024/06/13-16:03:28.915 1f907 compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/06/13-16:03:28.915 1f907 Delete type=2 #80
+2024/06/13-16:03:28.915 1f907 Delete type=2 #83
+2024/06/13-16:03:28.915 1f907 Delete type=2 #79
+2024/06/13-16:03:28.915 1f907 Delete type=2 #78
