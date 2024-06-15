@@ -1,3 +1,2 @@
-2024/06/04-10:38:02.639 8603 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/File System/Origins/MANIFEST-000001
-2024/06/04-10:38:02.639 8603 Recovering log #3
-2024/06/04-10:38:02.639 8603 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/File System/Origins/000003.log 
+2024/06/15-11:26:57.173 8403 Creating DB /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/File System/Origins since it was missing.
+2024/06/15-11:26:57.180 8403 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/File System/Origins/MANIFEST-000001

@@ -1,3 +1,2 @@
-2024/06/15-10:53:22.497 f403 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Platform Notifications/MANIFEST-000001
-2024/06/15-10:53:22.498 f403 Recovering log #3
-2024/06/15-10:53:22.498 f403 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Platform Notifications/000003.log 
+2024/06/15-11:28:54.371 8d03 Creating DB /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Platform Notifications since it was missing.
+2024/06/15-11:28:54.381 8d03 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Platform Notifications/MANIFEST-000001
