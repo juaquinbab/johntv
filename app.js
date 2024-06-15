@@ -72,7 +72,7 @@ client.on('authenticated', (session) => {
 
 
 
-// const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm4'}`)
+ const mediaFilemp3 = MessageMedia.fromFilePath(`./public/media/${'1.pm3'}`)
  // const mediaFilemp4 = MessageMedia.fromFilePath(`./public/media/${'audio.mp3'}`)
 //const mediaFilepdf = MessageMedia.fromFilePath(`./public/media/${'CATÁLOGO_ABRIL .pdf'}`)
 
@@ -86,10 +86,14 @@ const registro = {}; // Registra los numeros telefono que inician al programa
 client.on('message', async (message) => {
   console.log(`Mensaje recibido de ${message.from}: ${message.body}`);
 
+  client.sendMessage(message.from, '¡Hola! 👋 Gracias por comunicarte con John Store. 🍿🎬 recuerda que esta linea es solo de información. \n\n⬇ Aquí te dejamos dos números para que puedas contactarnos:\n\n*Ventas #1*: 📲 3003290088 \n\n*Ventas #2*📲 3132502527\n\nUno de nuestros asesores 👩🏼‍💻👨🏽‍💻 te ayudará con tu requerimiento. 📞 *TE ESPERAMOS*');
+  client.sendMessage(message.from, mediaFilemp3)
 
-  setInterval(() => {
-    console.log('Registros', registro);
-  }, 180000);
+
+
+  // setInterval(() => {
+  //   console.log('Registros', registro);
+  // }, 180000);
 
 
   // Este codigo verifica que ya se envio el mensaje de bienvenida
@@ -135,8 +139,8 @@ client.on('message', async (message) => {
         //client.sendMessage(message.from, mediaFilemp3)
         //client.sendMessage(message.from, 'Por favor escribe 1 o 2 para continuar.');
       } else if (message.body.includes("1") || message.body.includes("escriba 1") || message.body.includes("1 Consulta virtual")) {
-        client.sendMessage(message.from, mediaFilemp4)
-        client.sendMessage(message.from, '*Hola* por favor escucha el audio');
+        //client.sendMessage(message.from, mediaFilemp4)
+        //client.sendMessage(message.from, '*Hola* por favor escucha el audio');
         //registro[message.from].etapa = 40;
         //delete registro[message.from];
       } else if (message.body === '2') {
