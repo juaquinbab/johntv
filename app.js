@@ -88,7 +88,7 @@ client.on('message', async (message) => {
   console.log(`Mensaje recibido de ${message.from}: ${message.body}`);
 
   
-  client.sendMessage(message.from, '¡Hola! 👋 Gracias por comunicarte con John Store. 🍿🎬 recuerda que esta linea es solo de información. \n\n⬇ Aquí te dejamos dos números para que puedas contactarnos:\n\n*Ventas #1*: 📲 3132502527 \n\n*Ventas #2*📲 3003290088\n\nUno de nuestros asesores 👩🏼‍💻👨🏽‍💻 te ayudará con tu requerimiento. 📞 *TE ESPERAMOS*');
+  client.sendMessage(message.from, '*¡Hola!* 👋 Gracias por comunicarte con *John Store.* 🍿🎬 recuerda que esta linea es solo de información. \n\n⬇ Aquí te dejamos un números para que puedas contactarnos:\n\n*Ventas #1*: 📲 3024572102\n\nUno de nuestros asesores 👩🏼‍💻👨🏽‍💻 te ayudará con tu requerimiento. 📞 *TE ESPERAMOS*');
   client.sendMessage(message.from, mediaFilemp4)
 
 
