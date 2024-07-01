@@ -25,6 +25,22 @@ if (fs.existsSync(SESSION_FILE_PATH)) {
 
 
 
+// const client = new Client({
+//   puppeteer: {
+//     // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+//     handleSIGINT: false,
+//     args: ['--no-sandbox', '--disable-setuid-sandbox']
+//   },
+//   authStrategy: new LocalAuth({ clientId: "Client-one" }),
+//   webVersionCache: {
+//     type: 'remote',
+//     remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2413.51-beta.html '
+//   }
+// });
+
+
+
+
 const client = new Client({
   puppeteer: {
     // executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
@@ -32,12 +48,11 @@ const client = new Client({
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   },
   authStrategy: new LocalAuth({ clientId: "Client-one" }),
-  webVersionCache: {
-    type: 'remote',
-    remotePath: 'https://raw.githubusercontent.com/guigo613/alternative-wa-version/main/html/2.2413.51-beta-alt.html' // Tried 2.2412.54 still same result
-  }
+  // webVersionCache: {
+  //   type: 'remote',
+  //   remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2413.51-beta.html '
+  // }
 });
-
 
 
 process.on("SIGINT", async () => {
