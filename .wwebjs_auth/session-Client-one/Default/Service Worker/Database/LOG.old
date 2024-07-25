@@ -1,2 +1,3 @@
-2024/07/25-08:41:14.942 2f07 Creating DB /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database since it was missing.
-2024/07/25-08:41:14.950 2f07 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/MANIFEST-000001
+2024/07/25-08:43:55.085 a403 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/MANIFEST-000001
+2024/07/25-08:43:55.085 a403 Recovering log #3
+2024/07/25-08:43:55.085 a403 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Service Worker/Database/000003.log 
