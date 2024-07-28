@@ -1,2 +1,4 @@
-2024/07/25-10:13:49.599 f703 Creating DB /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Local Storage/leveldb since it was missing.
-2024/07/25-10:13:49.615 f703 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Local Storage/leveldb/MANIFEST-000001
+2024/07/28-17:45:39.589 8603 Reusing MANIFEST /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Local Storage/leveldb/MANIFEST-000001
+2024/07/28-17:45:39.590 8603 Recovering log #6
+2024/07/28-17:45:39.590 8603 Reusing old log /Users/leidyburgos/Documents/JOHNTV/.wwebjs_auth/session-Client-one/Default/Local Storage/leveldb/000006.log 
+2024/07/28-17:45:39.591 8603 Delete type=2 #7
