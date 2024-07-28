@@ -103,7 +103,7 @@ client.on('message', async (message) => {
   console.log(`Mensaje recibido de ${message.from}: ${message.body}`);
 
   
-  client.sendMessage(message.from, '*¡Hola!* 👋 Gracias por comunicarte con *John Store.* 🍿🎬 recuerda que esta linea es solo de información. \n\n⬇ Aquí te dejamos un números para que puedas contactarnos:\n\n*Ventas #1*: 📲 3024572102\n\nUno de nuestros asesores 👩🏼‍💻👨🏽‍💻 te ayudará con tu requerimiento. 📞 *TE ESPERAMOS*');
+  client.sendMessage(message.from, '*¡Hola!* 👋 Gracias por comunicarte con *John Store.* 🍿🎬 recuerda que esta linea es solo de información. \n\n⬇ Aquí te dejamos un números para que puedas contactarnos:\n\n*Ventas #1*: 📲 573003290088\n\nUno de nuestros asesores 👩🏼‍💻👨🏽‍💻 te ayudará con tu requerimiento. 📞 *TE ESPERAMOS*');
   client.sendMessage(message.from, mediaFilemp4)
 
 
@@ -113,7 +113,8 @@ client.on('message', async (message) => {
   // }, 180000);
 
 
-  // Este codigo verifica que ya se envio el mensaje de bienvenida
+  // /////
+  ////////Este codigo verifica que ya se envio el mensaje de bienvenida
   // if (!registro[message.from]) {
   //   //client.sendMessage(message.from, '*¡Hola, soy JOHN STORE!* 🙌 \n\n Gracias por ser parte de nuestra familia. 🌟 🛒 Teníamos la línea de WhatsApp 📱 3024572102, pero lamentablemente tuvimos un problema con ella. ¡Pero no te preocupes! ¡Estamos aquí con una NUEVA LÍNEA! 🆕 Ahora nos puedes escribir al 3132502527 para cualquier pedido pendiente ó soporte que necesites.\n\n👉 No olvides guardar las líneas de respaldo de nuestros diferentes asesores. \n\n📲 300-329-00-88\n\n📲 302-457-21-02\n\n📲 313-250-25-27\n\n*Agradecemos tu confianza.');
   //   //client.sendMessage(message.from, mediaFilemp4)
